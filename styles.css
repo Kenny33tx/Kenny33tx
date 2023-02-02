@@ -1,9 +1,65 @@
-* {
+html, body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
-#flex-container {
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#Header {
+   
+    border-radius: 25px;
+    background-color: blue; 
+    grid-column: 1/7;
+    grid-row:1/1;  
+   
+}
+
+#Sidebar {
+    border-radius:25px ;
+    background-color: red;  
+    grid-column: 8/13; 
+    grid-row: 1/2;
+   
+}
+
+#Content {
+    border-radius: 25px;
+    background-color: yellow; 
+    grid-column: 5/13 ; 
+    grid-row: 2/2;
+
+}
+
+#Nav {
+    border-radius: 25px;
+    background-color: green;
+    grid-column: 1/4;
+    grid-row: 2/2;
+
+}
+
+#Footer {
+    background-color: purple;
+    grid-column: 1/13 ;   
+    grid-row: 4/5;
+}
+
+
+
+#grid-container > div {
     border: 1px solid black;
-    display: flex;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen {
+    
 }
